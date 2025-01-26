@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" >
+{% csrf_token %}
+<!-- <span>Email</span> <input type="email" name="email"> -->
+Update your Data:
+<input type="text" name="crudapp" value="{{crudapp.0.crudapps}}" >
+<!-- {{form}} -->
+<br>
+<button class="btn--primary"> Save </button>
+</form>
+{% endblock %}
